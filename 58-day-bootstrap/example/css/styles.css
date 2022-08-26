@@ -1,9 +1,13 @@
 h1 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter-Black', 'Inter', sans-serif;
     font-size: 3rem;
     line-height: 1.5;
     font-weight: 900;
 }
 #title{
-    background-color: burlywood;
+    background-color: #FF7C7C;
+}
+
+.container-fluid{
+    padding: 1% 15%;
 }
