@@ -1,13 +1,50 @@
-h1 {
-    font-family: 'Inter-Black', 'Inter', sans-serif;
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: 900;
-}
-#title{
-    background-color: #FF7C7C;
+body{
+    font-family: "Inter", sans-serif;
 }
 
-.container-fluid{
-    padding: 1% 15%;
+h1 {
+  font-family: "Inter-Black", "Inter", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+#title {
+  background-color: #ff7c7c;
+}
+
+.container-fluid {
+  padding: 0% 10% 0% 10%;
+}
+
+.panel {
+  overflow-y: hidden;
+}
+
+.rotate {
+  background-color: transparent;
+  outline: 2px dashed;
+  transform: rotate(19deg) translateY(10rem) translateX(4em);
+}
+
+/* Navigation Bar */
+.navbar-brand{
+    font-family: "Albert Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+}
+
+.title-image{
+    width: 80%;
+}
+
+.feature-icon{
+    color: #ff5959;
+}
+
+:hover > .feature-icon{
+    color: #ff2626;
 }
