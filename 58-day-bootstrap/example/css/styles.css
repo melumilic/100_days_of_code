@@ -1,5 +1,5 @@
-body{
-    font-family: "Inter", sans-serif;
+body {
+  font-family: "Inter", sans-serif;
 }
 
 h1 {
@@ -12,39 +12,79 @@ h1 {
   background-color: #ff7c7c;
 }
 
+
 .container-fluid {
-  padding: 0% 10% 0% 10%;
+  padding: 0% 10%;
+  max-width: 130rem;
 }
 
 .panel {
   overflow-y: hidden;
 }
 
+.panel-side{
+    max-height: 50%;
+}
+
 .rotate {
-  background-color: transparent;
-  outline: 2px dashed;
   transform: rotate(19deg) translateY(10rem) translateX(4em);
 }
 
 /* Navigation Bar */
-.navbar-brand{
-    font-family: "Albert Sans", sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
+.navbar-brand {
+  font-family: "Albert Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
-.nav-link{
-    font-size: 1.2rem;
+.nav-link {
+  font-size: 1.2rem;
 }
 
-.title-image{
-    width: 80%;
+.title-image {
+  width: 80%;
 }
 
-.feature-icon{
-    color: #ff5959;
+/* Feature Section */
+.feature-display {
+  padding: 10rem 0;
+}
+.feature-icon {
+  color: #ff5959;
+}
+.feature-title {
+  padding: 0 5%;
+}
+.feature-subtext {
+  padding: 0 20%;
+}
+:hover > .feature-icon {
+  color: #ff2626;
 }
 
-:hover > .feature-icon{
-    color: #ff2626;
+/* Testimonials */
+.testimonial-display{
+    padding: 8% 15%;
+}
+.testimonial-bg{
+    background-color: #ff7c7c;
+}
+
+/* Press */
+#press {
+    background-color: #ff7c7c;
+}
+.press-logo{
+    width: 85%;
+    margin: 2rem 0 6rem 0
+}
+
+/* Pricing */
+.pricing-section{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.pricing-border{
+  border-color: #ff5959;
+  border-radius: 1rem;
 }

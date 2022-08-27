@@ -19,7 +19,7 @@
   <section id="title">
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-sm py-4">
+    <nav class="navbar navbar-dark navbar-expand-lg py-4">
       <div class="container-fluid">
         <a href="" class="navbar-brand text-white">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -28,7 +28,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapsibleContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-sm-0 d-flex flex-row gap-3">
+          <ul class="navbar-nav mx-lg-auto mb-2 mb-sm-0 d-flex flex-row gap-3">
             <li class="nav-item">
               <a href="" class="nav-link active text-light" aria-current="page">Home</a>
             </li>
@@ -55,33 +55,34 @@
         </div>
       </div>
     </nav>
-    <div class="container-fluid">
 
-      <!-- Title -->
-
-      <div class="row panel">
-        <!-- Left side element -->
-        <div class="col-lg-6 d-flex flex-column justify-content-start gap-lg-4 gap-md-2 pt-5">
-          <h1 class="text-white">Meet new and interesting dogs nearby.</h1>
-          <div class="d-flex gap-2 flex-row">
-            <button class="btn btn-dark btn-lg" type="button">
-              <div class="d-flex flex-row gap-2 align-items-center">
-                <i class="fa-brands fa-apple"></i>
-                <span>Download</span>
-              </div>
-            </button>
-            <button class="btn btn-outline-light btn-lg" type="button">
-              <div class="d-flex flex-row gap-2 align-items-center">
-                <i class="fa-brands fa-google-play"></i>
-                <span>Download</span>
-              </div>
-            </button>
+    <!-- Title -->
+    <div class="panel">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Left side element -->
+          <div class="col-lg-6 d-flex flex-column justify-content-start gap-lg-4 gap-md-2 pt-5">
+            <h1 class="text-white">Meet new and interesting dogs nearby.</h1>
+            <div class="d-flex gap-2 flex-row">
+              <button class="btn btn-dark btn-lg" type="button">
+                <div class="d-flex flex-row gap-2 align-items-center">
+                  <i class="fa-brands fa-apple"></i>
+                  <span>Download</span>
+                </div>
+              </button>
+              <button class="btn btn-outline-light btn-lg" type="button">
+                <div class="d-flex flex-row gap-2 align-items-center">
+                  <i class="fa-brands fa-google-play"></i>
+                  <span>Download</span>
+                </div>
+              </button>
+            </div>
           </div>
-        </div>
 
-        <!-- Right side element -->
-        <div class="col-lg-6">
-          <img class="rotate title-image" src="images/iphone6.png" alt="iphone-mockup">
+          <!-- Right side element -->
+          <div class="col-lg-6 panel-side">
+            <img class="rotate title-image" src="images/iphone6.png" alt="iphone-mockup">
+          </div>
         </div>
       </div>
     </div>
@@ -92,26 +93,27 @@
   <!-- Features -->
 
   <section id="features">
-
-    <div class="container-fluid">
-      <div class="row my-5 py-5">
-        <div class="col-lg-4 d-flex flex-column align-items-center gap-3">
-          <i class="fa-solid fa-circle-check fa-4x feature-icon m-1"></i>
-          <h3 class="text-center fs-2 fw-semibold">Easy to use.</h3>
-          <p class="text-secondary text-center">So easy to use, even your dog could do it.</p>
+    <div class="bg-white">
+      <div class="container-fluid">
+        <div class="row feature-display">
+          <div class="col-lg-4 d-flex flex-column align-items-center gap-3 my-4">
+            <i class="fa-solid fa-circle-check fa-5x feature-icon m-1"></i>
+            <h3 class="text-center fs-2 fw-semibold feature-title">Easy to use.</h3>
+            <p class="text-secondary text-center feature-subtext">So easy to use, even your dog could do it.</p>
+          </div>
+          <div class="col-lg-4 d-flex flex-column align-items-center gap-3 my-4">
+            <i class="fa-solid fa-bullseye fa-5x feature-icon m-1"></i>
+            <h3 class="text-center fs-2 fw-semibold feature-title">Elite Clientele</h3>
+            <p class="text-secondary text-center feature-subtext">We have all the dogs, the greatest dogs.</p>
+          </div>
+          <div class="col-lg-4 d-flex flex-column align-items-center gap-3 my-4">
+            <i class="fa-solid fa-heart fa-5x feature-icon m-1"></i>
+            <h3 class="text-center fs-2 fw-semibold feature-title">Guaranteed to work.</h3>
+            <p class="text-secondary text-center feature-subtext">Find the love of your dog's life or your money back.
+            </p>
+          </div>
         </div>
-        <div class="col-lg-4 d-flex flex-column align-items-center gap-3">
-          <i class="fa-solid fa-bullseye fa-4x feature-icon m-1"></i>
-          <h3 class="text-center fs-2 fw-semibold">Elite Clientele</h3>
-          <p class="text-secondary text-center">We have all the dogs, the greatest dogs.</p>
-        </div>
-        <div class="col-lg-4 d-flex flex-column align-items-center gap-3">
-          <i class="fa-solid fa-heart fa-4x feature-icon m-1"></i>
-          <h3 class="text-center fs-2 fw-semibold">Guaranteed to work.</h3>
-          <p class="text-secondary text-center">Find the love of your dog's life or your money back.</p>
-        </div>
-    </div>
-  
+      </div>
     </div>
 
   </section>
@@ -121,23 +123,48 @@
 
   <section id="testimonials">
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 d-flex flex-row align-items-center">
-          <h2 class="text-center fst-italic">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-        </div>
-        <div class="col-md-6">
-          <img src="images/dog-img.jpg" alt="dog-profile">
-          <em>Pebbles, New York</em>
+    <div class="testimonial-bg">
+      <div class="container-fluid">
+        <div id="testimonialCarouselControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row testimonial-display">
+                <div class="col-lg-8 d-flex flex-row align-items-center">
+                  <h2 class="text-center fst-italic lh-base text-white px-md-4 py-5 my-5">I no longer have to sniff other
+                    dogs for love. I've found the hottest
+                    Corgi on TinDog. Woof.</h2>
+                </div>
+                <div class="col-lg-4 d-flex flex-column gap-3 align-items-center py-5">
+                  <img src="images/dog-img.jpg" alt="dog-profile" class="rounded-circle border border-2 border-light">
+                  <em class="fs-3">Pebbles, New York</em>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row testimonial-display">
+                <div class="col-lg-8 d-flex flex-row align-items-center">
+                  <h2 class="text-center fst-italic lh-base text-white px-md-4 py-5 my-5">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+                </div>
+                <div class="col-lg-4 d-flex flex-column gap-3 align-items-center py-5">
+                  <img src="images/lady-img.jpg" alt="lady-profile" class="rounded-circle border border-2 border-light">
+                  <em class="fs-3">Beverly, Illinois</em>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarouselControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarouselControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </div>
       </div>
-    </div>
-    
-    
 
-    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-    <em>Beverly, Illinois</em> -->
+    </div>
 
   </section>
 
@@ -145,10 +172,22 @@
   <!-- Press -->
 
   <section id="press">
-    <img src="images/techcrunch.png" alt="tc-logo">
-    <img src="images/tnw.png" alt="tnw-logo">
-    <img src="images/bizinsider.png" alt="biz-insider-logo">
-    <img src="images/mashable.png" alt="mashable-logo">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-3">
+          <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+        </div>
+        <div class="col-3">
+          <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+        </div>
+        <div class="col-3">
+          <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+        </div>
+        <div class="col-3">
+          <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+        </div>
+      </div>
+    </div>
 
   </section>
 
@@ -157,33 +196,64 @@
 
   <section id="pricing">
 
-    <h2>A Plan for Every Dog's Needs</h2>
-    <p>Simple and affordable price plans for your and your dog.</p>
+    <div class="container-fluid pricing-section">
+      <div class="d-flex flex-column gap-2 align-items-center my-5">
+        <h2 class="fs-1 fw-semibold">A Plan for Every Dog's Needs</h2>
+        <p class="fs-3 text-secondary">Simple and affordable price plans for your and your dog.</p>
+      </div>
 
-
-    <h3>Chihuahua</h3>
-    <h2>Free</h2>
-    <p>5 Matches Per Day</p>
-    <p>10 Messages Per Day</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>Labrador</h3>
-    <h2>$49 / mo</h2>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>Mastiff</h3>
-    <h2>$99 / mo</h2>
-    <p>Pirority Listing</p>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+      <div class="card-group row-cols-lg-3 mb-3 text-center">
+        <div class="col-lg-4 col-sm-6 p-2">
+          <div class="card shadow-sm h-100">
+            <div class="card-header py-3">
+              <h3 class="text-center my-0 fs-2">Chihuahua</h3>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center gap-2">
+              <h2 class="fs-2">Free</h2>
+              <div class="text-secondary">
+                <p>5 Matches Per Day</p>
+                <p>10 Messages Per Day</p>
+                <p>Unlimited App Usage</p>
+              </div>
+              <button class="btn btn-outline-dark w-100 btn-lg mt-auto" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 p-2">
+          <div class="card shadow-sm h-100">
+            <div class="card-header py-3">
+              <h3 class="text-center my-0 fs-2">Labrador</h3>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center gap-2">
+              <h2 class="fs-2">$49 / mo</h2>
+              <div class="text-secondary">
+                <p>Unlimited Matches</p>
+                <p>Unlimited Messages</p>
+                <p>Unlimited App Usage</p>
+              </div>
+              <button class="btn btn-outline-dark w-100 btn-lg mt-auto" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 p-2">
+          <div class="card shadow-sm border-danger h-100">
+            <div class="card-header py-3 bg-danger">
+              <h3 class="text-center my-0 text-white fs-2">Mastiff</h3>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center gap-2">
+              <h2 class="fs-2">$99 / mo</h2>
+              <div class="text-secondary">
+                <p>Priority Listing</p>
+                <p>Unlimited Matches</p>
+                <p>Unlimited Messages</p>
+                <p>Unlimited App Usage</p>
+              </div>
+              <button class="btn btn-outline-danger w-100 btn-lg mt-auto" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </section>
 
@@ -192,9 +262,15 @@
 
   <section id="cta">
 
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col d-flex">
+          <h3>Find the True Love of Your Dog's Life Today.</h3>
+          <button type="button">Download</button>
+          <button type="button">Download</button>
+        </div>
+      </div>
+    </div>
 
   </section>
 
