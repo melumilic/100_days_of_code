@@ -203,7 +203,7 @@
       </div>
 
       <div class="card-group row-cols-lg-3 mb-3 text-center">
-        <div class="col-lg-4 col-sm-6 p-2">
+        <div class="col-lg-4 col-sm-6 p-2 my-2">
           <div class="card shadow-sm h-100">
             <div class="card-header py-3">
               <h3 class="text-center my-0 fs-2">Chihuahua</h3>
@@ -219,7 +219,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6 p-2">
+        <div class="col-lg-4 col-sm-6 p-2 my-2">
           <div class="card shadow-sm h-100">
             <div class="card-header py-3">
               <h3 class="text-center my-0 fs-2">Labrador</h3>
@@ -235,7 +235,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-12 p-2">
+        <div class="col-lg-4 col-sm-12 p-2 my-2">
           <div class="card shadow-sm border-danger h-100">
             <div class="card-header py-3 bg-danger">
               <h3 class="text-center my-0 text-white fs-2">Mastiff</h3>
@@ -262,12 +262,26 @@
 
   <section id="cta">
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col d-flex">
-          <h3>Find the True Love of Your Dog's Life Today.</h3>
-          <button type="button">Download</button>
-          <button type="button">Download</button>
+    <div class="cta-bg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="d-flex flex-column align-items-center gap-2 cta-section">
+            <h3 class="fs-1 fw-semibold text-white text-center">Find the True Love of Your Dog's Life Today.</h3>
+            <div class="d-flex flex-row gap-2 justify-content-center my-3">
+              <button class="btn btn-dark btn-lg" type="button">
+                <div class="d-flex flex-row gap-2 align-items-center">
+                  <i class="fa-brands fa-apple"></i>
+                  <span>Download</span>
+                </div>
+              </button>
+              <button class="btn btn-outline-light btn-lg" type="button">
+                <div class="d-flex flex-row gap-2 align-items-center">
+                  <i class="fa-brands fa-google-play"></i>
+                  <span>Download</span>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -279,7 +293,19 @@
 
   <footer id="footer">
 
-    <p>© Copyright 2018 TinDog</p>
+    <footer class="container-fluid footer-section">
+      <div class="row">
+        <div class="col d-flex flex-column align-items-center gap-2">
+          <div class="d-flex flex-row gap-3 justify-content-center">
+            <i class="fa-brands fa-twitter fa-2x"></i>
+            <i class="fa-brands fa-facebook-f fa-2x"></i>
+            <i class="fa-brands fa-instagram fa-2x"></i>
+            <i class="fa-solid fa-envelope fa-2x"></i>
+          </div>
+          <p class="fs-5 mt-2">© Copyright 2018 TinDog</p>
+        </div>
+      </div>
+    </footer>
 
   </footer>
 

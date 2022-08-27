@@ -88,3 +88,16 @@ h1 {
   border-color: #ff5959;
   border-radius: 1rem;
 }
+
+/* CTA */
+.cta-section{
+  padding: 10rem 0;
+}
+.cta-bg{
+  background: #ff5959
+}
+
+/* footer */
+.footer-section{
+  padding: 4rem;
+}
