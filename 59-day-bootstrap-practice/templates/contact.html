@@ -24,17 +24,11 @@
           I will get back to you as soon as possible!
         </p>
         <div class="my-5">
-          <!-- * * * * * * * * * * * * * * *-->
-          <!-- * * SB Forms Contact Form * *-->
-          <!-- * * * * * * * * * * * * * * *-->
-          <!-- This form is pre-integrated with SB Forms.-->
-          <!-- To make this form functional, sign up at-->
-          <!-- https://startbootstrap.com/solution/contact-forms-->
-          <!-- to get an API token!-->
-          <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+          <form id="contactForm" action="{{url_for('receive_contact_data')}}" method="post">
             <div class="form-floating">
               <input
                 class="form-control"
+                name="name"
                 id="name"
                 type="text"
                 placeholder="Enter your name..."
@@ -48,6 +42,7 @@
             <div class="form-floating">
               <input
                 class="form-control"
+                name="email"
                 id="email"
                 type="email"
                 placeholder="Enter your email..."
@@ -64,6 +59,7 @@
             <div class="form-floating">
               <input
                 class="form-control"
+                name="phone"
                 id="phone"
                 type="tel"
                 placeholder="Enter your phone number..."
@@ -77,6 +73,7 @@
             <div class="form-floating">
               <textarea
                 class="form-control"
+                name="message"
                 id="message"
                 placeholder="Enter your message here..."
                 style="height: 12rem"
@@ -113,9 +110,10 @@
             </div>
             <!-- Submit Button-->
             <button
-              class="btn btn-primary text-uppercase disabled"
+              class="btn btn-primary text-uppercase"
               id="submitButton"
               type="submit"
+              value="Submit"
             >
               Send
             </button>
