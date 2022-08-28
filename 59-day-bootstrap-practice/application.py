@@ -3,6 +3,9 @@ from flask import Flask
 from flask import render_template
 from flask import request
 from post import Post
+from smtplib import SMTP_SSL
+from email.message import EmailMessage
+
 import requests
 
 response = requests.get("https://api.npoint.io/c790b4d5cab58020d391")
@@ -38,6 +41,16 @@ def contact():
 def receive_contact_data():
     error = None
     if request.method == "POST":
-        # send email with request.form["key"]
+        # server = SMTP_SSL('smtp.gmail.com', 465)
+        # server.login("username", "password")
+
+        # message_email = EmailMessage()
+        # message_email.set_content("Here is the message")
+        # message_email["Subject"]="This is the subject"
+        # message_email["From"]="examplefrom@gmail.com"
+        # message_email["To"]="examplefrom@gmail.com"
+
+        # server.sendmail(message_email)
+        # server.quit()
         return request.form["name"]
     return "not implemented"
