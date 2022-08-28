@@ -10,7 +10,7 @@ app.secret_key = "secret_key"
 def home():
     return render_template("index.html")
 
-
+#just know flask bootstrap exists for generating a form
 @app.route("/login", methods=["POST", "GET"])
 def login():
     form = MyForm()
