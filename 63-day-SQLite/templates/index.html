@@ -1,12 +1,20 @@
 {% extends 'components/base.html' %}
-
+<!---->
 {% block title %}Home{% endblock %}
-
+<!---->
 {% block content %}
 <h1>My Library</h1>
-    <ul>
-        <li></li>
-    </ul>
-    
+<ul>
+  {% if book_list|length == 0 %}
+  <li>Library is empty</li>
+  {% else %}
+  <!---->
+  {% for entry in book_list %}
+  <li>{{ entry.title}} - {{entry.author}} - {{entry.rating}}/10</li>
+  {% endfor %}
+  <!---->
+  {% endif %}
+</ul>
+
 <a href="{{url_for('add')}}">Add New Book</a>
-{% endblock content %}
+{% endblock content %} ß

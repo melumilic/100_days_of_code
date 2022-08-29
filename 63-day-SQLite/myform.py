@@ -10,5 +10,5 @@ from wtforms.validators import DataRequired, NumberRange
 class BookForm(FlaskForm):
     book_name = StringField(label="Book Title",validators=[DataRequired()])
     author = StringField(label="Author",validators=[DataRequired()])
-    rating = FloatField(label="Rating",validators=[DataRequired(),NumberRange(min=0,max=5)])
+    rating = FloatField(label="Rating",validators=[DataRequired(),NumberRange(min=0,max=10)])
     submit = SubmitField(label="Add Book")
