@@ -6,14 +6,6 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///new-books-collection.db'
 db = SQLAlchemy(app)
 
-class Book(db.Model):
-    id  = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(250), unique=True,nullable=False)
-    author = db.Column(db.String(250), nullable=False)
-    rating = db.Column(db.Float, nullable=False)
-
-    def __repr__(self) -> str:
-        return f"<Book: {self.title}>"
 
 
 # db.create_all()
@@ -21,6 +13,7 @@ class Book(db.Model):
 # new_book = Book(id=1, title="Harry Potter", author="J. K. Rowling", rating=9.3)
 # db.session.add(new_book)
 # db.session.commit()
+
 # import sqlite3
 
 # db = sqlite3.connect("books-collection.db")
