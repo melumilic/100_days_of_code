@@ -1,4 +1,5 @@
 from fileinput import filename
+from sqlite3 import IntegrityError
 from flask import (
     Flask,
     render_template,
@@ -80,9 +81,16 @@ def register():
                 salt_length=8
             ),
         )
-
-        db.session.add(new_user)
-        db.session.commit()
+        if not db.session.query(User).filter_by(email=request.form.get("email")).first():
+            db.session.add(new_user)
+            db.session.commit()
+        else:
+            flash('User already exists, Please try with another email!')
+            return render_template("register.html")
+        # can also just query with the email and see if it exists
+        # except IntegrityError:
+        #     flash('User already exists, Please try with another email!')
+        #     return redirect(url_for('register'))
 
         return redirect(url_for("secrets"))
 
@@ -101,6 +109,10 @@ def login():
                 if not is_safe_url(next):
                     return abort(400)
                 return redirect(next or url_for('secrets'))
+            else:
+                flash("Password is incorrect, try again.")
+        else:
+            flash("That email does not exist, try again.")
     return render_template('login.html')
 
 
